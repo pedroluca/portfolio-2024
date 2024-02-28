@@ -1,0 +1,13 @@
+@import '../../global.css';
+
+.invisible {
+  visibility: hidden;
+}
+
+header {
+  height: 5rem;
+  width: 100vw;
+  padding: .5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+}
