@@ -1,13 +1,16 @@
+import { NavLink } from 'react-router-dom'
 import Icon from '../../assets/images/icon.png'
 import './header.css'
 
 export function Header() {
   return (
     <header>
-      <img src={Icon} />
+      <img src={Icon} onClick={() => window.location.href = '/'} />
       <nav>
-        <p>ola</p>
-        <p>ola</p>
+        <NavLink to="/about">Sobre</NavLink>
+        <NavLink to="/projects">Projetos</NavLink>
+        <NavLink to="/setup">Setup</NavLink>
+        <NavLink to="/links">Links</NavLink>
       </nav>
       <img src={Icon} className="invisible" />
     </header>

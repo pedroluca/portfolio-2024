@@ -1,13 +1,46 @@
-@import '../../global.css';
+@import '../../variables.css';
 
 .invisible {
   visibility: hidden;
 }
 
 header {
-  height: 5rem;
+  height: var(--header-height);
   width: 100vw;
-  padding: .5rem 2rem;
   display: flex;
+  align-items: center;
   justify-content: space-between;
+  padding: 0 2rem;
+}
+
+img {
+  height: calc(var(--header-height) - 1rem);
+}
+
+img:hover {
+  cursor: pointer;
+}
+
+nav {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2px;
+}
+
+a {
+  color: var(--gray1-color);
+  text-decoration: none;
+  font-weight: 600;
+  transition: ease-in-out .2s;
+  border-bottom: 2px solid transparent;
+}
+
+a:hover {
+  color: var(--gray2-color);
+  border-color: var(--gray2-color);
+}
+
+a.active {
+  color: var(--white-color);
+  border-color: var(--white-color);
 }

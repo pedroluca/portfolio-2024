@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Tomorrow:wght@300;400;700&display=swap');
+@import './variables.css';
+
 :root {
-  /* font-family: ; */
+  font-family: 'Tomorrow', sans-serif;
   font-size: 62.5%;
-  --black-color: #242424;
 }
 
 * {
@@ -11,5 +13,27 @@
 }
 
 body {
-  font-size: 1.6rem;
+  width: 100vw;
+  height: 100vh;
+  font-size: 1.8rem;
+  background: var(--black3-color);
+  color: #f1f1f1;
+}
+
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: auto;
+  min-height: calc(100vh - (var(--header-height) + var(--footer-height)));
+  padding: 2rem 20%;
+}
+
+.dp-fx-cl {
+  flex-direction: column;
+}
+
+.dp-fx-rw {
+  flex-direction: row;
 }
